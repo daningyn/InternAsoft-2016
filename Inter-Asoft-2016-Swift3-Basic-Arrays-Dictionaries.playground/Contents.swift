@@ -89,14 +89,100 @@ for (index, item) in foodList1.enumerated() {
     print("Item \(index): \(item)")
 }
 
+//--------------------------------------------------End Array---------------------------------------
 
+//--------------------------------------------------Dictionaries---------------------------------------
 
+// Create an empty dictionary
+var namesOfIntegers = [Int: String]()
 
+// Set 1 key-value pair for dictionary
+namesOfIntegers[7] = "Seven"
+print("Dictionary: \(namesOfIntegers)") //Dictionary: [7: "Seven"]
 
+// Set empty for dictionary
+namesOfIntegers = [:] //It is an empty dictionary of type [Int: String]
 
+// Create a dictionary with a dictionary literal
+var fullNames1: [String: String] = ["Danh": "Nguyen", "Toan": "Nguyen", "Minh": "Dang"]
+// Or
+var fullNames2 = ["Danh": "Nguyen", "Toan": "Nguyen", "Minh": "Dang"]
 
+// Accessing and modifying a Dictionary
+print("the fullNames contains \(fullNames1.count) items")
 
+//Use the Boolean isEmpty property for checking amount of dictionary
+if fullNames1.isEmpty == true {
+    print("The fullNames is empty")
+} else {
+    print("The fullNames is not empty")
+}
 
+//Access 1 item in dictionary
+var value = fullNames1["Danh"]
+print(value!)
+
+// Add a new item to a dictionary
+fullNames1["Hau"] = "Tran"
+print("The fullNames1 is \(fullNames1)")
+
+// Change the value associated with a particular key
+fullNames1["Hau"] = "Nguyen"
+
+// Or can use updateValue to set or update the value for a particular key
+// The method sets a value for a key if none exists or updates the value if that key already exists.
+// It will return the old value after performing an update
+// And it returns an optional value
+// Example
+// Current value for "Hau" key is "Nguyen"
+if let oldValue = fullNames1.updateValue("Tran", forKey: "Hau") {
+    print("The old value for \"Hau\" key is \(oldValue)")
+}
+print("The new value for \"Hau\" key is \(fullNames1["Hau"]!)") //Using ! for forced unwraping
+
+// Using if let for checking
+if let value = fullNames1["Danh"] {
+    print("value: \(value)")
+} else {
+    print("value is nil or \"Danh\" key is not in dictionary")
+}
+
+if let value = fullNames1["Cong"] {
+    print("value: \(value)")
+} else {
+    print("value is nil or \"Cong\" key is not in dictionary")
+}
+
+// Remove a key-value pair
+fullNames1["Hau"] = nil
+print("fullNames1: \(fullNames1)") // ["Minh": "Dang", "Toan": "Nguyen", "Danh": "Nguyen"]
+
+// Or use method removeValue(forKey:)
+fullNames1.removeValue(forKey: "Toan")
+print("fullNames1: \(fullNames1)") // ["Minh": "Dang", "Danh": "Nguyen"]    
+
+// Use for loop for iterating over a dictionary
+for (key, value) in fullNames1 {
+    print("\(key): \(value)")
+}
+
+// Or iterating over a keys
+for key in fullNames1.keys {
+    print("key: \(key)")
+}
+
+// Or iterating over a values
+for value in fullNames1.values {
+    print("value: \(value)")
+}
+
+// Case keys to array
+let keyArray = [String](fullNames1.keys)
+print("Key array is \(keyArray)") // ["Minh", "Danh"]
+
+// Case values to array 
+let valueArray = [String](fullNames1.values)
+print("Value array is \(valueArray)") // ["Dang", "Nguyen"]
 
 
 
