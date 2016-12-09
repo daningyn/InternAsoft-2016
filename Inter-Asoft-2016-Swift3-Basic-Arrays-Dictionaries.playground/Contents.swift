@@ -43,8 +43,51 @@ if foodList1.isEmpty == true {
 } else {
     print("The food list is not empty")
 }
+// Add 1 item to array
+foodList1.append("Meat")
+foodList1 += ["Pho"]
+// Add items to array
+foodList1 += ["Chicken", "Milk"]
 
+// Accessing item in array
+var item = foodList1[1]
+print("The second item is \(item)")
 
+// Change an existing value at a given index
+foodList1[1] = "Vegetable"
+print("The second item is \(foodList1[1])")
+
+print("The food list have \(foodList1.count) items") // have 6 items
+//Change a range of values
+foodList1[2...4] = ["Ride", "Noodle", "Duck"]
+print("The food list is \(foodList1)")
+
+// If the replacement set of values has a different length than the range i am replacing
+foodList1[2...4] = ["Noodle", "Duck"]
+print("The food list is \(foodList1)")
+print("The food list have \(foodList1.count) items") // have 5 items
+
+// Insert an item into the array at a specified index
+foodList1.insert("Chicken", at: 0)
+print("The food list is \(foodList1)")
+print("The food list have \(foodList1.count) items") // have 6 items
+
+// Remove an item into the array at a specified index
+foodList1.remove(at: 0)
+print("The food list is \(foodList1)")
+print("The food list have \(foodList1.count) items") // have 5 items
+// Or remove an last item into the array
+foodList1.removeLast()
+
+//Use for loop for iterating over an array
+for item in foodList1 {
+    print(item)
+}
+
+//Or interating over an array with index, item
+for (index, item) in foodList1.enumerated() {
+    print("Item \(index): \(item)")
+}
 
 
 
