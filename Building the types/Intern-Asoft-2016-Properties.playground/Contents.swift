@@ -70,16 +70,94 @@ var square = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10.0, height:
 square.center = Point(x: 15.0, y: 15.0) // set loction for computed
 print("square.origin is (\(square.origin.x), \(square.origin.y))") // square.origin is (10.0, 10.0)
 
+// Shorthand Setter Declaration
+struct TestSetter {
+    
+    var lastName: String = String()
+    var firstName: String = String()
+    var fullName: String {
+        get {
+            return "\(firstName) \(lastName)"
+        }
+        set {
+            let spl = newValue.characters.split{$0 == " "}.map(String.init)
+            firstName = spl[0]
+            lastName = spl[1]
+        }
+    }
+    
+}
 
+// let's run
+var testSetter = TestSetter(lastName: "Nguyen", firstName: "Danh")
+print(testSetter.fullName) // Danh Nguyen
+testSetter.fullName = "Toan Nguyen"
+print(testSetter.fullName) // Toan Nguyen
 
+// Read-Only Computed Properties
+struct Rectangle {
+    var length: Int
+    var width: Int
+    var area: Int {
+        get {
+            return length*width
+        }
+    }
+}
 
+var testGetter = Rectangle(length: 20, width: 5)
+print("Area is \(testGetter.area)")
+//testGetter.area = 100 // Area is read-only computed property, so can not set value. Error!
 
+// Property Observers
+struct TestPropertyObserver {
+    var number: Int = 0 {
+        willSet {
+            print("Prepare to set new value: \(newValue)")
+        }
+        didSet {
+            print("Added \(number) to number, old value: \(oldValue)")
+        }
+    }
+}
 
+var testPropertyObserver = TestPropertyObserver(number: 0)
+testPropertyObserver.number = 10
+//Prepare to set new value: 10
+//Added 10 to number, old value: 0
+testPropertyObserver.number = 44
+//Prepare to set new value: 44
+//Added 44 to number, old value: 10
 
+// Querying and Setting Type Properties
 
+struct FindMinNumber {
+    var minNumber = 0
+    var haveMin = false
+    var number = 0 {
+        didSet {
+            if number < minNumber {
+                minNumber = number
+                haveMin = true
+            } else {
+                haveMin = false
+            }
+        }
+    }
+}
 
+var findMinNumber = FindMinNumber(minNumber: 100, haveMin: true, number: 100)
 
+findMinNumber.number = 90
+if findMinNumber.haveMin {
+    print("Number \(findMinNumber.number) is min number") // Number 90 is min number
+} else {
+    print("Number \(findMinNumber.number) is not min number, the min number is \(findMinNumber.minNumber)")
+}
 
-
-
-
+findMinNumber.number = 99
+if findMinNumber.haveMin {
+    print("Number \(findMinNumber.number) is min number")
+} else {
+    print("Number \(findMinNumber.number) is not min number, the min number is \(findMinNumber.minNumber)") // Number 99 is not min number, the min number is 90
+}
