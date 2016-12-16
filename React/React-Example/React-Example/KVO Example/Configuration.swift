@@ -10,7 +10,7 @@ import UIKit
 
 class Configuration: NSObject {
     
-    var createAt = Date()
-    var updateAt = Date()
+    dynamic var createAt = Date()
+    dynamic var updateAt = Date()
     
 }

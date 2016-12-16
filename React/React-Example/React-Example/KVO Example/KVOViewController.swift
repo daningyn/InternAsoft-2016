@@ -15,7 +15,7 @@ class KVOViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.addObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt), options: [.old, .new], context: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +25,12 @@ class KVOViewController: UIViewController {
     
     @IBAction func updateConfiguration(_ sender: Any) {
         configurationManager.updateConfiguration()
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == #keyPath(configurationManager.configuration.updateAt) {
+            timerLabel.text = configurationManager.updateAt
+        }
     }
 
 }
