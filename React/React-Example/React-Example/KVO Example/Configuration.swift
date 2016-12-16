@@ -6,4 +6,11 @@
 //  Copyright © 2016 Danh Nguyen. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Configuration: NSObject {
+    
+    var createAt = Date()
+    var updateAt = Date()
+    
+}
