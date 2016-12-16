@@ -17,6 +17,10 @@ class KVOViewController: UIViewController {
         super.viewDidLoad()
         self.addObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt), options: [.old, .new], context: nil)
     }
+    
+    deinit {
+        removeObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt))
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
