@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let cars: [CarViewModel] = {
+        let hondaCar = Car(model: "Honda Civic", make: "Honda", kilowatts: 174, photoURL: "http://buyersguide.caranddriver.com/media/assets/submodel/7587.jpg")
+        let mazdaCar = Car(model: "Mazda 6", make: "Mazda", kilowatts: 184, photoURL: "http://static.usnews.rankingsandreviews.com/images/Auto/izmo/i6336193/2017_mazda_mazda6_angularfront.jpg")
+        return [CarViewModel(car: hondaCar), CarViewModel(car: mazdaCar)]
+    }()
+    
+    class var shareInstanced: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        self.window?.rootViewController = CarViewController(nibName: "CarViewController", bundle: nil)
         return true
     }
 

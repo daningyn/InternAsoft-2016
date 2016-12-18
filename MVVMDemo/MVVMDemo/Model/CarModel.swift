@@ -23,14 +23,3 @@ class Car {
     }
     
 }
-
-class CarService { // todo something about network, GET POST...
-    
-}
-
-class CarModel {
-    
-    let car: [Car] = []
-    let carService: CarService = CarService()
-    
-}

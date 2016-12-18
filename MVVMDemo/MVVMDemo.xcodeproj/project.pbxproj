@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44243AB61E06E84200B673A1 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44243AB51E06E84200B673A1 /* CarViewModel.swift */; };
+		44243ABA1E06EC8700B673A1 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44243AB81E06EC8700B673A1 /* CarViewController.swift */; };
+		44243ABB1E06EC8700B673A1 /* CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44243AB91E06EC8700B673A1 /* CarViewController.xib */; };
 		44BC485A1E03F530005548BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BC48591E03F530005548BB /* AppDelegate.swift */; };
 		44BC485C1E03F530005548BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BC485B1E03F530005548BB /* ViewController.swift */; };
 		44BC485F1E03F530005548BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BC485D1E03F530005548BB /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44243AB51E06E84200B673A1 /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarViewModel.swift; path = ViewModel/CarViewModel.swift; sourceTree = "<group>"; };
+		44243AB81E06EC8700B673A1 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarViewController.swift; path = View/CarViewController.swift; sourceTree = "<group>"; };
+		44243AB91E06EC8700B673A1 /* CarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CarViewController.xib; path = View/CarViewController.xib; sourceTree = "<group>"; };
 		44BC48561E03F530005548BB /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BC48591E03F530005548BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BC485B1E03F530005548BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44243AB41E06E82300B673A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44243AB51E06E84200B673A1 /* CarViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		44243AB71E06EC7200B673A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44243AB81E06EC8700B673A1 /* CarViewController.swift */,
+				44243AB91E06EC8700B673A1 /* CarViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		44BC484D1E03F530005548BB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +122,8 @@
 		44BC48581E03F530005548BB /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				44243AB71E06EC7200B673A1 /* View */,
+				44243AB41E06E82300B673A1 /* ViewModel */,
 				44BC48871E03F542005548BB /* Model */,
 				44BC48591E03F530005548BB /* AppDelegate.swift */,
 				44BC485B1E03F530005548BB /* ViewController.swift */,
@@ -249,6 +274,7 @@
 				44BC48641E03F530005548BB /* LaunchScreen.storyboard in Resources */,
 				44BC48611E03F530005548BB /* Assets.xcassets in Resources */,
 				44BC485F1E03F530005548BB /* Main.storyboard in Resources */,
+				44243ABB1E06EC8700B673A1 /* CarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44243ABA1E06EC8700B673A1 /* CarViewController.swift in Sources */,
 				44BC485C1E03F530005548BB /* ViewController.swift in Sources */,
 				44BC485A1E03F530005548BB /* AppDelegate.swift in Sources */,
 				44BC48891E03F57D005548BB /* CarModel.swift in Sources */,
+				44243AB61E06E84200B673A1 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +554,7 @@
 				44BC48801E03F530005548BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BC48811E03F530005548BB /* Build configuration list for PBXNativeTarget "MVVMDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +563,7 @@
 				44BC48831E03F530005548BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BC48841E03F530005548BB /* Build configuration list for PBXNativeTarget "MVVMDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +572,7 @@
 				44BC48861E03F530005548BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
