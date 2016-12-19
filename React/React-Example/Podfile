@@ -6,8 +6,9 @@ target 'React-Example' do
   use_frameworks!
 
   # Pods for React-Example
-  pod ‘RxSwift’
-  pod ‘RxCocoa’
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Moya/RxSwift', '8.0.0-beta.6'
 
   target 'React-ExampleTests' do
     inherit! :search_paths
