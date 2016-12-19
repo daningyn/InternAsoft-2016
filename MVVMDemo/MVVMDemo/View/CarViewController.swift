@@ -11,12 +11,12 @@ import UIKit
 class CarViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    internal let arrayCar = AppDelegate.shareInstanced.cars
+    internal var arrayCar = AppDelegate.shareInstanced.cars
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -48,6 +48,33 @@ extension CarViewController: UITableViewDataSource {
         return cell
     }
 
+}
+
+extension CarViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "Do you want to rename this car?", message: nil, preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = self.arrayCar[indexPath.row].model
+        }
+        let okButton = UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0]
+            if textField?.text != "" {
+                self.arrayCar[indexPath.row].model = (textField?.text)!
+                self.arrayCar[indexPath.row].rename(newName: (textField?.text)!)
+                self.tableView.reloadData()
+            }
+            
+        })
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak alert] (_) in
+            alert?.dismiss(animated: true, completion: nil)
+        })
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
 }
 
 

@@ -10,9 +10,9 @@ import Foundation
 
 class CarViewModel {
     
-    private var car: Car
+    internal var car: Car
     
-    let model: String
+    var model: String
     let kilowatts: Int
     let photoURL: String
     
@@ -38,4 +38,11 @@ class CarViewModel {
     // Networking...
     // In a real world application, i'd fetching data from an external source, but for this example, i just let our AppDelegate hold an array of cars
     
+}
+
+extension CarViewModel {
+    func rename(newName name: String) {
+        self.car.model = name
+        self.model = name
+    }
 }
