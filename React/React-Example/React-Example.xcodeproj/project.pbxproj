@@ -13,6 +13,13 @@
 		441A963D1E03D25400243A41 /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441A963B1E03D25400243A41 /* KVOViewController.xib */; };
 		441A963F1E03D2CD00243A41 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A963E1E03D2CD00243A41 /* Configuration.swift */; };
 		441A96411E03D2F700243A41 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A96401E03D2F700243A41 /* ConfigurationManager.swift */; };
+		4494BE181E07B996006F5C24 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494BE161E07B996006F5C24 /* ListViewController.swift */; };
+		4494BE191E07B996006F5C24 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4494BE171E07B996006F5C24 /* ListViewController.xib */; };
+		4494BE1D1E07BD37006F5C24 /* WhoToFollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494BE1B1E07BD37006F5C24 /* WhoToFollowVC.swift */; };
+		4494BE1E1E07BD37006F5C24 /* WhoToFollowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4494BE1C1E07BD37006F5C24 /* WhoToFollowVC.xib */; };
+		4494BE211E07C1B2006F5C24 /* WhoToFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4494BE1F1E07C1B2006F5C24 /* WhoToFollowTableViewCell.swift */; };
+		4494BE221E07C1B2006F5C24 /* WhoToFollowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4494BE201E07C1B2006F5C24 /* WhoToFollowTableViewCell.xib */; };
+		44F4DD711E07C5FB00CB5190 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4DD701E07C5FB00CB5190 /* User.swift */; };
 		44F974B41E03821000591CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F974B31E03821000591CF6 /* AppDelegate.swift */; };
 		44F974B61E03821000591CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F974B51E03821000591CF6 /* ViewController.swift */; };
 		44F974B91E03821000591CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F974B71E03821000591CF6 /* Main.storyboard */; };
@@ -47,6 +54,13 @@
 		441A963B1E03D25400243A41 /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KVOViewController.xib; path = "KVO Example/KVOViewController.xib"; sourceTree = "<group>"; };
 		441A963E1E03D2CD00243A41 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = "KVO Example/Configuration.swift"; sourceTree = "<group>"; };
 		441A96401E03D2F700243A41 /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationManager.swift; path = "KVO Example/ConfigurationManager.swift"; sourceTree = "<group>"; };
+		4494BE161E07B996006F5C24 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = List/ListViewController.swift; sourceTree = "<group>"; };
+		4494BE171E07B996006F5C24 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListViewController.xib; path = List/ListViewController.xib; sourceTree = "<group>"; };
+		4494BE1B1E07BD37006F5C24 /* WhoToFollowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoToFollowVC.swift; path = WhoToFollow/WhoToFollowVC.swift; sourceTree = "<group>"; };
+		4494BE1C1E07BD37006F5C24 /* WhoToFollowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WhoToFollowVC.xib; path = WhoToFollow/WhoToFollowVC.xib; sourceTree = "<group>"; };
+		4494BE1F1E07C1B2006F5C24 /* WhoToFollowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoToFollowTableViewCell.swift; path = WhoToFollow/WhoToFollowTableViewCell.swift; sourceTree = "<group>"; };
+		4494BE201E07C1B2006F5C24 /* WhoToFollowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WhoToFollowTableViewCell.xib; path = WhoToFollow/WhoToFollowTableViewCell.xib; sourceTree = "<group>"; };
+		44F4DD701E07C5FB00CB5190 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = WhoToFollow/User.swift; sourceTree = "<group>"; };
 		44F974B01E03821000591CF6 /* React-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "React-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F974B31E03821000591CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F974B51E03821000591CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +126,27 @@
 			name = "KVO Example";
 			sourceTree = "<group>";
 		};
+		4494BE151E07B977006F5C24 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4494BE161E07B996006F5C24 /* ListViewController.swift */,
+				4494BE171E07B996006F5C24 /* ListViewController.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		4494BE1A1E07BD09006F5C24 /* WhoToFollow */ = {
+			isa = PBXGroup;
+			children = (
+				4494BE1B1E07BD37006F5C24 /* WhoToFollowVC.swift */,
+				4494BE1C1E07BD37006F5C24 /* WhoToFollowVC.xib */,
+				4494BE1F1E07C1B2006F5C24 /* WhoToFollowTableViewCell.swift */,
+				4494BE201E07C1B2006F5C24 /* WhoToFollowTableViewCell.xib */,
+				44F4DD701E07C5FB00CB5190 /* User.swift */,
+			);
+			name = WhoToFollow;
+			sourceTree = "<group>";
+		};
 		44F974A71E03821000591CF6 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +172,8 @@
 		44F974B21E03821000591CF6 /* React-Example */ = {
 			isa = PBXGroup;
 			children = (
+				4494BE1A1E07BD09006F5C24 /* WhoToFollow */,
+				4494BE151E07B977006F5C24 /* List */,
 				441A96391E03D22D00243A41 /* KVO Example */,
 				44F974E11E03822300591CF6 /* SearchBar */,
 				44F974B31E03821000591CF6 /* AppDelegate.swift */,
@@ -320,6 +357,9 @@
 			files = (
 				441A963D1E03D25400243A41 /* KVOViewController.xib in Resources */,
 				44F974E51E03825000591CF6 /* SearchBarVC.xib in Resources */,
+				4494BE191E07B996006F5C24 /* ListViewController.xib in Resources */,
+				4494BE1E1E07BD37006F5C24 /* WhoToFollowVC.xib in Resources */,
+				4494BE221E07C1B2006F5C24 /* WhoToFollowTableViewCell.xib in Resources */,
 				44F974BE1E03821000591CF6 /* LaunchScreen.storyboard in Resources */,
 				44F974BB1E03821000591CF6 /* Assets.xcassets in Resources */,
 				44F974B91E03821000591CF6 /* Main.storyboard in Resources */,
@@ -488,9 +528,13 @@
 				44F974B61E03821000591CF6 /* ViewController.swift in Sources */,
 				441A963F1E03D2CD00243A41 /* Configuration.swift in Sources */,
 				441A96411E03D2F700243A41 /* ConfigurationManager.swift in Sources */,
+				4494BE1D1E07BD37006F5C24 /* WhoToFollowVC.swift in Sources */,
 				441A963C1E03D25400243A41 /* KVOViewController.swift in Sources */,
 				44F974E41E03825000591CF6 /* SearchBarVC.swift in Sources */,
 				44F974B41E03821000591CF6 /* AppDelegate.swift in Sources */,
+				4494BE211E07C1B2006F5C24 /* WhoToFollowTableViewCell.swift in Sources */,
+				44F4DD711E07C5FB00CB5190 /* User.swift in Sources */,
+				4494BE181E07B996006F5C24 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import UIKit
 
 class WhoToFollowTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +22,10 @@ class WhoToFollowTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func didTouchXButton(_ sender: Any) {
+        
     }
     
 }
