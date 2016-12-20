@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447568221E09163F00768715 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447568201E09163F00768715 /* ImageViewController.swift */; };
+		447568231E09163F00768715 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447568211E09163F00768715 /* ImageViewController.xib */; };
 		448AC13C1E08EAD5006544FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC13B1E08EAD5006544FF /* AppDelegate.swift */; };
 		448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC13D1E08EAD5006544FF /* ViewController.swift */; };
 		448AC1411E08EAD5006544FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448AC13F1E08EAD5006544FF /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		447568201E09163F00768715 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "Image View/ImageViewController.swift"; sourceTree = "<group>"; };
+		447568211E09163F00768715 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageViewController.xib; path = "Image View/ImageViewController.xib"; sourceTree = "<group>"; };
 		448AC1381E08EAD5006544FF /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448AC13B1E08EAD5006544FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448AC13D1E08EAD5006544FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4475681F1E09162100768715 /* Image View */ = {
+			isa = PBXGroup;
+			children = (
+				447568201E09163F00768715 /* ImageViewController.swift */,
+				447568211E09163F00768715 /* ImageViewController.xib */,
+			);
+			name = "Image View";
+			sourceTree = "<group>";
+		};
 		448AC12F1E08EAD5006544FF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				4475681F1E09162100768715 /* Image View */,
 				448AC1691E08EB52006544FF /* ListItems */,
 				448AC13B1E08EAD5006544FF /* AppDelegate.swift */,
 				448AC13D1E08EAD5006544FF /* ViewController.swift */,
@@ -249,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447568231E09163F00768715 /* ImageViewController.xib in Resources */,
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
 				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
 				448AC1431E08EAD5006544FF /* Assets.xcassets in Resources */,
@@ -279,6 +294,7 @@
 			files = (
 				448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */,
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
+				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
 				448AC13C1E08EAD5006544FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

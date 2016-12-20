@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="iOSLearning" customModuleProvider="target">
             <connections>
+                <outlet property="alphaSlider" destination="eBK-9b-jWb" id="8DJ-WC-R99"/>
+                <outlet property="imageView" destination="C9D-Bm-Yqw" id="M2a-EN-cxK"/>
+                <outlet property="opacySlider" destination="Ms8-7p-uJ9" id="ZeW-Vl-hiL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="C9D-Bm-Yqw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="445"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAb-MK-Ihc">
+                    <rect key="frame" x="10" y="468" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="J1S-g8-KIi"/>
+                        <constraint firstAttribute="width" constant="50" id="RUw-K6-rE7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eBK-9b-jWb">
+                    <rect key="frame" x="73" y="465" width="234" height="31"/>
+                    <connections>
+                        <action selector="alphaSliderValueChanged:" destination="-1" eventType="valueChanged" id="meB-C3-DDE"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacy:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQc-R4-cQG">
+                    <rect key="frame" x="10" y="513" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="NG1-SM-4EY"/>
+                        <constraint firstAttribute="height" constant="25" id="PhG-kW-5Xt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ms8-7p-uJ9">
+                    <rect key="frame" x="73" y="510" width="234" height="31"/>
+                    <connections>
+                        <action selector="opacySliderValueChanged:" destination="-1" eventType="valueChanged" id="r3e-rS-Dge"/>
+                    </connections>
+                </slider>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PQc-R4-cQG" firstAttribute="top" secondItem="gAb-MK-Ihc" secondAttribute="bottom" constant="20" id="0gt-uu-na5"/>
+                <constraint firstItem="PQc-R4-cQG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="9Ad-Bw-8GA"/>
+                <constraint firstAttribute="trailing" secondItem="C9D-Bm-Yqw" secondAttribute="trailing" id="AdK-ui-gQo"/>
+                <constraint firstItem="C9D-Bm-Yqw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hmy-xA-H0S"/>
+                <constraint firstAttribute="trailing" secondItem="Ms8-7p-uJ9" secondAttribute="trailing" constant="15" id="Lqf-X3-aJc"/>
+                <constraint firstItem="eBK-9b-jWb" firstAttribute="leading" secondItem="gAb-MK-Ihc" secondAttribute="trailing" constant="15" id="Oex-a6-d9x"/>
+                <constraint firstItem="gAb-MK-Ihc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="YNR-0u-08c"/>
+                <constraint firstItem="Ms8-7p-uJ9" firstAttribute="leading" secondItem="PQc-R4-cQG" secondAttribute="trailing" constant="15" id="bdp-zs-Zkj"/>
+                <constraint firstAttribute="trailing" secondItem="eBK-9b-jWb" secondAttribute="trailing" constant="15" id="cT3-9V-DBC"/>
+                <constraint firstItem="Ms8-7p-uJ9" firstAttribute="centerY" secondItem="PQc-R4-cQG" secondAttribute="centerY" id="cTY-1M-GqC"/>
+                <constraint firstItem="eBK-9b-jWb" firstAttribute="centerY" secondItem="gAb-MK-Ihc" secondAttribute="centerY" id="l18-fY-bdX"/>
+                <constraint firstItem="eBK-9b-jWb" firstAttribute="top" secondItem="C9D-Bm-Yqw" secondAttribute="bottom" constant="20" id="laJ-qu-DUb"/>
+                <constraint firstItem="C9D-Bm-Yqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uzB-Ch-Ro0"/>
+                <constraint firstAttribute="bottom" secondItem="PQc-R4-cQG" secondAttribute="bottom" constant="30" id="zYU-ii-xfq"/>
+            </constraints>
+            <point key="canvasLocation" x="-124" y="16"/>
         </view>
     </objects>
+    <resources>
+        <image name="dog" width="944" height="960"/>
+    </resources>
 </document>
