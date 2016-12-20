@@ -12,7 +12,7 @@ class ListItemViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders"]
+    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders, Scrolls"]
     var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {

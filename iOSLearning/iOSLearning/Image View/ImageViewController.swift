@@ -14,6 +14,11 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var alphaSlider: UISlider!
     @IBOutlet weak var opacySlider: UISlider!
+    @IBOutlet weak var scrollRight: NSLayoutConstraint!
+    @IBOutlet weak var scrollLeft: NSLayoutConstraint!
+    @IBOutlet weak var scrollTop: NSLayoutConstraint!
+    @IBOutlet weak var scrollBot: NSLayoutConstraint!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +37,22 @@ class ImageViewController: UIViewController {
     
     @IBAction func opacySliderValueChanged(_ sender: Any) {
         self.imageView.layer.opacity = opacySlider.value
+    }
+    
+    @IBAction func didTouchButton(_ sender: Any) {
+        if scrollRight.constant == 0 {
+            button.setTitle("Disable Scroll", for: .normal)
+            scrollRight.constant = 50
+            scrollBot.constant = 50
+            scrollTop.constant = 50
+            scrollLeft.constant = 50
+        } else {
+            button.setTitle("Enable Scroll", for: .normal)
+            scrollRight.constant = 0
+            scrollBot.constant = 0
+            scrollTop.constant = 0
+            scrollLeft.constant = 0
+        }
     }
 
 }
