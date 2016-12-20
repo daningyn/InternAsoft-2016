@@ -12,13 +12,15 @@ class ListItemViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders, Scrolls"]
+    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders, Scrolls", "TableView, PickerView, DatePicker"]
     var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.layoutMargins = UIEdgeInsets.zero
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         // Do any additional setup after loading the view.
     }
 
@@ -49,6 +51,7 @@ extension ListItemViewController: UITableViewDataSource {
 extension ListItemViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
             self.alertView()
@@ -56,6 +59,8 @@ extension ListItemViewController: UITableViewDelegate {
             self.activityIndicators()
         case 2:
             self.navigationController?.pushViewController(ImageViewController(nibName: "ImageViewController", bundle: nil), animated: true)
+        case 3:
+            self.navigationController?.pushViewController(TableViewController(nibName: "TableViewController", bundle: nil), animated: true)
         default:
             break
         }
