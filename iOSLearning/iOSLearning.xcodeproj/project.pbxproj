@@ -14,6 +14,8 @@
 		448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448AC1441E08EAD5006544FF /* LaunchScreen.storyboard */; };
 		448AC1511E08EAD5006544FF /* iOSLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC1501E08EAD5006544FF /* iOSLearningTests.swift */; };
 		448AC15C1E08EAD5006544FF /* iOSLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC15B1E08EAD5006544FF /* iOSLearningUITests.swift */; };
+		448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC16A1E08EB81006544FF /* ListItemViewController.swift */; };
+		448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448AC16B1E08EB81006544FF /* ListItemViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		448AC1571E08EAD5006544FF /* iOSLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448AC15B1E08EAD5006544FF /* iOSLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLearningUITests.swift; sourceTree = "<group>"; };
 		448AC15D1E08EAD5006544FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448AC16A1E08EB81006544FF /* ListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItemViewController.swift; path = ListItem/ListItemViewController.swift; sourceTree = "<group>"; };
+		448AC16B1E08EB81006544FF /* ListItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListItemViewController.xib; path = ListItem/ListItemViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				448AC1691E08EB52006544FF /* ListItems */,
 				448AC13B1E08EAD5006544FF /* AppDelegate.swift */,
 				448AC13D1E08EAD5006544FF /* ViewController.swift */,
 				448AC13F1E08EAD5006544FF /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				448AC15D1E08EAD5006544FF /* Info.plist */,
 			);
 			path = iOSLearningUITests;
+			sourceTree = "<group>";
+		};
+		448AC1691E08EB52006544FF /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				448AC16A1E08EB81006544FF /* ListItemViewController.swift */,
+				448AC16B1E08EB81006544FF /* ListItemViewController.xib */,
+			);
+			name = ListItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
+				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
 				448AC1431E08EAD5006544FF /* Assets.xcassets in Resources */,
 				448AC1411E08EAD5006544FF /* Main.storyboard in Resources */,
 			);
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */,
+				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				448AC13C1E08EAD5006544FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
