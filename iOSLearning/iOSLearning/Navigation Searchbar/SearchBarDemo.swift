@@ -12,14 +12,16 @@ class SearchBarDemo: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     var isRightButtonEditing: Bool = false
     
     let listCity = ["New York", "San Francisco", "Los Angeles", "Washington", "Mesa", "Phoenix", "Boston", "Boise", "Fresno", "San Jose", "Raleigh", "Austin", "Wichita", "Kansas City", "Virginia Beach", "Indianapolis", "Chicago", "Arlington", "Albuquerque", "Denver", "Sacramento", "Bakersfield", "Saint Paul", "El Paso", "Lincoln"]
-    var shownCity = ["New York", "San Francisco", "Los Angeles", "Washington", "Mesa", "Phoenix", "Boston", "Boise", "Fresno", "San Jose", "Raleigh", "Austin", "Wichita", "Kansas City", "Virginia Beach", "Indianapolis", "Chicago", "Arlington", "Albuquerque", "Denver", "Sacramento", "Bakersfield", "Saint Paul", "El Paso", "Lincoln"]
+    var shownCity = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.shownCity = self.listCity.sorted{$0<$1}
         self.searchBar.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -44,7 +46,22 @@ class SearchBarDemo: UIViewController {
     }
     
     func search(query: String) -> [String] {
-        return listCity.filter({($0.range(of: query) != nil)})
+        if self.segmentControl.selectedSegmentIndex == 0 {
+            return listCity.filter({($0.range(of: query) != nil)})
+                                  .sorted {$0<$1}
+        } else {
+            return listCity.filter({($0.range(of: query) != nil)})
+                                  .sorted {$0>$1}
+        }
+    }
+    
+    @IBAction func valueChanged(_ sender: Any) {
+        if self.segmentControl.selectedSegmentIndex == 0 {
+            self.shownCity = self.shownCity.sorted{$0<$1}
+        } else {
+            self.shownCity = self.shownCity.sorted{$0>$1}
+        }
+        self.tableView.reloadData()
     }
 
 }
