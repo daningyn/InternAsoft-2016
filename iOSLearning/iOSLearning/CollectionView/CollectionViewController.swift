@@ -18,6 +18,7 @@ class CollectionViewController: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "CellTextField", bundle: nil), forCellWithReuseIdentifier: "CellTextField")
+        self.collectionView.register(UINib(nibName: "CellToolBar", bundle: nil), forCellWithReuseIdentifier: "CellToolBar")
         let scroll = UICollectionViewFlowLayout()
         scroll.scrollDirection = .horizontal
         self.collectionView.collectionViewLayout = scroll

@@ -26,6 +26,8 @@
 		44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DC01E0A1FFF00993996 /* CollectionViewController.xib */; };
 		44F09DC61E0A21A400993996 /* CellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DC41E0A21A400993996 /* CellTextField.swift */; };
 		44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DC51E0A21A400993996 /* CellTextField.xib */; };
+		44F09DD11E0A72C700993996 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DCF1E0A72C700993996 /* WebViewController.swift */; };
+		44F09DD21E0A72C700993996 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DD01E0A72C700993996 /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		44F09DC01E0A1FFF00993996 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewController.xib; path = CollectionView/CollectionViewController.xib; sourceTree = "<group>"; };
 		44F09DC41E0A21A400993996 /* CellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellTextField.swift; path = CollectionView/CellTextField/CellTextField.swift; sourceTree = "<group>"; };
 		44F09DC51E0A21A400993996 /* CellTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellTextField.xib; path = CollectionView/CellTextField/CellTextField.xib; sourceTree = "<group>"; };
+		44F09DCF1E0A72C700993996 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = WebView/WebViewController.swift; sourceTree = "<group>"; };
+		44F09DD01E0A72C700993996 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = WebView/WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				44F09DCE1E0A72A600993996 /* WebView */,
 				44F09DBE1E0A1FE800993996 /* CollectionView */,
 				44F09DB91E0A0F1E00993996 /* Navigation Searchbar */,
 				447568241E09292000768715 /* TableView */,
@@ -207,6 +212,15 @@
 				44F09DC51E0A21A400993996 /* CellTextField.xib */,
 			);
 			name = CellTextfield;
+			sourceTree = "<group>";
+		};
+		44F09DCE1E0A72A600993996 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				44F09DCF1E0A72C700993996 /* WebViewController.swift */,
+				44F09DD01E0A72C700993996 /* WebViewController.xib */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +336,7 @@
 				44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */,
 				447568231E09163F00768715 /* ImageViewController.xib in Resources */,
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
+				44F09DD21E0A72C700993996 /* WebViewController.xib in Resources */,
 				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
 				44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */,
 				447568281E09293D00768715 /* TableViewController.xib in Resources */,
@@ -353,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */,
+				44F09DD11E0A72C700993996 /* WebViewController.swift in Sources */,
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
 				447568271E09293D00768715 /* TableViewController.swift in Sources */,
