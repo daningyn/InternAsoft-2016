@@ -10,10 +10,13 @@ import UIKit
 
 class WebViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.webView.delegate = self
+        self.webView.loadRequest(URLRequest(url: URL(string: "https://www.google.com.vn/")!))
+        self.webView.allowsLinkPreview = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,3 +25,15 @@ class WebViewController: UIViewController {
     }
 
 }
+
+extension WebViewController: UIWebViewDelegate {
+    
+    
+    
+}
+
+
+
+
+
+
