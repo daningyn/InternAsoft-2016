@@ -20,6 +20,8 @@
 		448AC15C1E08EAD5006544FF /* iOSLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC15B1E08EAD5006544FF /* iOSLearningUITests.swift */; };
 		448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448AC16A1E08EB81006544FF /* ListItemViewController.swift */; };
 		448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448AC16B1E08EB81006544FF /* ListItemViewController.xib */; };
+		44F09DBC1E0A0F5E00993996 /* SearchBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DBA1E0A0F5E00993996 /* SearchBarDemo.swift */; };
+		44F09DBD1E0A0F5E00993996 /* SearchBarDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		448AC15D1E08EAD5006544FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448AC16A1E08EB81006544FF /* ListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItemViewController.swift; path = ListItem/ListItemViewController.swift; sourceTree = "<group>"; };
 		448AC16B1E08EB81006544FF /* ListItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListItemViewController.xib; path = ListItem/ListItemViewController.xib; sourceTree = "<group>"; };
+		44F09DBA1E0A0F5E00993996 /* SearchBarDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarDemo.swift; path = "Navigation Searchbar/SearchBarDemo.swift"; sourceTree = "<group>"; };
+		44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchBarDemo.xib; path = "Navigation Searchbar/SearchBarDemo.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				44F09DB91E0A0F1E00993996 /* Navigation Searchbar */,
 				447568241E09292000768715 /* TableView */,
 				4475681F1E09162100768715 /* Image View */,
 				448AC1691E08EB52006544FF /* ListItems */,
@@ -165,6 +170,15 @@
 				448AC16B1E08EB81006544FF /* ListItemViewController.xib */,
 			);
 			name = ListItems;
+			sourceTree = "<group>";
+		};
+		44F09DB91E0A0F1E00993996 /* Navigation Searchbar */ = {
+			isa = PBXGroup;
+			children = (
+				44F09DBA1E0A0F5E00993996 /* SearchBarDemo.swift */,
+				44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */,
+			);
+			name = "Navigation Searchbar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +297,7 @@
 				447568281E09293D00768715 /* TableViewController.xib in Resources */,
 				448AC1431E08EAD5006544FF /* Assets.xcassets in Resources */,
 				448AC1411E08EAD5006544FF /* Main.storyboard in Resources */,
+				44F09DBD1E0A0F5E00993996 /* SearchBarDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +326,7 @@
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
 				447568271E09293D00768715 /* TableViewController.swift in Sources */,
+				44F09DBC1E0A0F5E00993996 /* SearchBarDemo.swift in Sources */,
 				448AC13C1E08EAD5006544FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

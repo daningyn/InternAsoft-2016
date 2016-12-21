@@ -12,7 +12,7 @@ class ListItemViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders, Scrolls", "TableView, PickerView, DatePicker"]
+    let array = ["Alert", "Activity Indicators", "ImageViews, Labels, Sliders, Scrolls", "TableView, PickerView, DatePicker", "Navigation, SearchBar"]
     var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
@@ -61,6 +61,8 @@ extension ListItemViewController: UITableViewDelegate {
             self.navigationController?.pushViewController(ImageViewController(nibName: "ImageViewController", bundle: nil), animated: true)
         case 3:
             self.navigationController?.pushViewController(TableViewController(nibName: "TableViewController", bundle: nil), animated: true)
+        case 4:
+            self.navigationController?.pushViewController(SearchBarDemo(nibName: "SearchBarDemo", bundle: nil), animated: true)
         default:
             break
         }
