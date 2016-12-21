@@ -22,6 +22,10 @@
 		448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448AC16B1E08EB81006544FF /* ListItemViewController.xib */; };
 		44F09DBC1E0A0F5E00993996 /* SearchBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DBA1E0A0F5E00993996 /* SearchBarDemo.swift */; };
 		44F09DBD1E0A0F5E00993996 /* SearchBarDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */; };
+		44F09DC11E0A1FFF00993996 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DBF1E0A1FFF00993996 /* CollectionViewController.swift */; };
+		44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DC01E0A1FFF00993996 /* CollectionViewController.xib */; };
+		44F09DC61E0A21A400993996 /* CellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F09DC41E0A21A400993996 /* CellTextField.swift */; };
+		44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F09DC51E0A21A400993996 /* CellTextField.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		448AC16B1E08EB81006544FF /* ListItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListItemViewController.xib; path = ListItem/ListItemViewController.xib; sourceTree = "<group>"; };
 		44F09DBA1E0A0F5E00993996 /* SearchBarDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarDemo.swift; path = "Navigation Searchbar/SearchBarDemo.swift"; sourceTree = "<group>"; };
 		44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchBarDemo.xib; path = "Navigation Searchbar/SearchBarDemo.xib"; sourceTree = "<group>"; };
+		44F09DBF1E0A1FFF00993996 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = CollectionView/CollectionViewController.swift; sourceTree = "<group>"; };
+		44F09DC01E0A1FFF00993996 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewController.xib; path = CollectionView/CollectionViewController.xib; sourceTree = "<group>"; };
+		44F09DC41E0A21A400993996 /* CellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellTextField.swift; path = CollectionView/CellTextField/CellTextField.swift; sourceTree = "<group>"; };
+		44F09DC51E0A21A400993996 /* CellTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellTextField.xib; path = CollectionView/CellTextField/CellTextField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				44F09DBE1E0A1FE800993996 /* CollectionView */,
 				44F09DB91E0A0F1E00993996 /* Navigation Searchbar */,
 				447568241E09292000768715 /* TableView */,
 				4475681F1E09162100768715 /* Image View */,
@@ -179,6 +188,25 @@
 				44F09DBB1E0A0F5E00993996 /* SearchBarDemo.xib */,
 			);
 			name = "Navigation Searchbar";
+			sourceTree = "<group>";
+		};
+		44F09DBE1E0A1FE800993996 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				44F09DC31E0A217E00993996 /* CellTextfield */,
+				44F09DBF1E0A1FFF00993996 /* CollectionViewController.swift */,
+				44F09DC01E0A1FFF00993996 /* CollectionViewController.xib */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		44F09DC31E0A217E00993996 /* CellTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				44F09DC41E0A21A400993996 /* CellTextField.swift */,
+				44F09DC51E0A21A400993996 /* CellTextField.xib */,
+			);
+			name = CellTextfield;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +319,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */,
 				447568231E09163F00768715 /* ImageViewController.xib in Resources */,
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
 				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
+				44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */,
 				447568281E09293D00768715 /* TableViewController.xib in Resources */,
 				448AC1431E08EAD5006544FF /* Assets.xcassets in Resources */,
 				448AC1411E08EAD5006544FF /* Main.storyboard in Resources */,
@@ -326,8 +356,10 @@
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
 				447568271E09293D00768715 /* TableViewController.swift in Sources */,
+				44F09DC11E0A1FFF00993996 /* CollectionViewController.swift in Sources */,
 				44F09DBC1E0A0F5E00993996 /* SearchBarDemo.swift in Sources */,
 				448AC13C1E08EAD5006544FF /* AppDelegate.swift in Sources */,
+				44F09DC61E0A21A400993996 /* CellTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
