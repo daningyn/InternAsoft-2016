@@ -43,7 +43,7 @@
                             <constraint firstAttribute="height" constant="30" id="Q7b-7U-Wwi"/>
                             <constraint firstAttribute="width" constant="100" id="Vr5-N1-5Wo"/>
                         </constraints>
-                        <state key="normal" title="Go Process"/>
+                        <state key="normal" title="Go Progress"/>
                         <connections>
                             <action selector="didTouchButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="EFc-qv-8rs"/>
                         </connections>
