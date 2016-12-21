@@ -88,7 +88,7 @@ extension TableViewController {
     
     func showAlert(indexPath: IndexPath) {
         let alert = UIAlertController(title: "Chose Color", message: "\n\n\n\n\n\n", preferredStyle: .actionSheet)
-        let pickerFrame = CGRect(x: 0, y: 30, width: 270, height: 150)
+        let pickerFrame = CGRect(x: 0, y: 30, width: self.view.bounds.width, height: 150)
         let picker = UIPickerView(frame: pickerFrame)
         picker.delegate = self
         picker.dataSource = self
@@ -108,7 +108,7 @@ extension TableViewController {
     }
     
     func showAlertDatePicker() {
-        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 30, width: 270, height: 150))
+        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 30, width: self.view.bounds.width, height: 150))
         datePicker.datePickerMode = .dateAndTime
         let alert = UIAlertController(title: "Date Picker", message: "\n\n\n\n\n\n", preferredStyle: .actionSheet)
         alert.view.addSubview(datePicker)
