@@ -12,6 +12,7 @@ class CollectionViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var stepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class CollectionViewController: UIViewController {
         let scroll = UICollectionViewFlowLayout()
         scroll.scrollDirection = .horizontal
         self.collectionView.collectionViewLayout = scroll
+        self.stepper.autorepeat = false
+        self.stepper.minimumValue = 0
+        self.stepper.stepValue = 1
         
         // Do any additional setup after loading the view.
     }
@@ -30,6 +34,11 @@ class CollectionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func valueChangedStepper(_ sender: Any) {
+        self.collectionView.scrollToItem(at: IndexPath(item: Int(self.stepper.value), section: 0), at: .centeredHorizontally, animated: true)
+        self.pageControl.currentPage = Int(self.stepper.value)
+    }
 
 }
 
@@ -37,6 +46,7 @@ extension CollectionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         self.pageControl.numberOfPages = 3
+        self.stepper.maximumValue = 2
         return 3
     }
 
@@ -47,7 +57,8 @@ extension CollectionViewController: UICollectionViewDataSource {
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        self.pageControl.currentPage = Int(scrollView.contentOffset.x / 320)
+        self.pageControl.currentPage = Int(scrollView.contentOffset.x / self.collectionView.bounds.width)
+        self.stepper.value = Double(self.pageControl.currentPage)
     }
     
 }
