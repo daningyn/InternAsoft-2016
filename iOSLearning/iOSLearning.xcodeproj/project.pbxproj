@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44515D071E0B6015002B3053 /* AdvancedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */; };
+		44515D081E0B6015002B3053 /* AdvancedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */; };
 		447568221E09163F00768715 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447568201E09163F00768715 /* ImageViewController.swift */; };
 		447568231E09163F00768715 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447568211E09163F00768715 /* ImageViewController.xib */; };
 		447568271E09293D00768715 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447568251E09293D00768715 /* TableViewController.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedTableViewController.swift; path = "Advanced TableView/AdvancedTableViewController.swift"; sourceTree = "<group>"; };
+		44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvancedTableViewController.xib; path = "Advanced TableView/AdvancedTableViewController.xib"; sourceTree = "<group>"; };
 		447568201E09163F00768715 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "Image View/ImageViewController.swift"; sourceTree = "<group>"; };
 		447568211E09163F00768715 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageViewController.xib; path = "Image View/ImageViewController.xib"; sourceTree = "<group>"; };
 		447568251E09293D00768715 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = TableView/TableViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44515D041E0B5FE2002B3053 /* Advanced TableView */ = {
+			isa = PBXGroup;
+			children = (
+				44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */,
+				44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */,
+			);
+			name = "Advanced TableView";
+			sourceTree = "<group>";
+		};
 		4475681F1E09162100768715 /* Image View */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +156,7 @@
 		448AC13A1E08EAD5006544FF /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
+				44515D041E0B5FE2002B3053 /* Advanced TableView */,
 				44F09DCE1E0A72A600993996 /* WebView */,
 				44F09DBE1E0A1FE800993996 /* CollectionView */,
 				44F09DB91E0A0F1E00993996 /* Navigation Searchbar */,
@@ -336,6 +350,7 @@
 				44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */,
 				447568231E09163F00768715 /* ImageViewController.xib in Resources */,
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
+				44515D081E0B6015002B3053 /* AdvancedTableViewController.xib in Resources */,
 				44F09DD21E0A72C700993996 /* WebViewController.xib in Resources */,
 				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
 				44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */,
@@ -368,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */,
+				44515D071E0B6015002B3053 /* AdvancedTableViewController.swift in Sources */,
 				44F09DD11E0A72C700993996 /* WebViewController.swift in Sources */,
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
