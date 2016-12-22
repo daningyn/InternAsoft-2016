@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		44515D071E0B6015002B3053 /* AdvancedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */; };
 		44515D081E0B6015002B3053 /* AdvancedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */; };
+		44515D161E0B6652002B3053 /* CustomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D141E0B6652002B3053 /* CustomNameCell.xib */; };
+		44515D1A1E0B666C002B3053 /* CustomBirthdayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D181E0B666C002B3053 /* CustomBirthdayCell.xib */; };
+		44515D1E1E0B6686002B3053 /* CustomMaritalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D1C1E0B6686002B3053 /* CustomMaritalCell.xib */; };
+		44515D261E0B66CF002B3053 /* CustomFavoriteSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D241E0B66CF002B3053 /* CustomFavoriteSportCell.xib */; };
+		44515D2A1E0B66E3002B3053 /* CustomFavoriteColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D281E0B66E3002B3053 /* CustomFavoriteColorCell.xib */; };
+		44515D2E1E0B672C002B3053 /* CustomLevelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D2C1E0B672C002B3053 /* CustomLevelCell.xib */; };
+		44515D321E0B68EA002B3053 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44515D301E0B68EA002B3053 /* NormalCell.xib */; };
+		44515D341E0B6B92002B3053 /* CellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44515D331E0B6B92002B3053 /* CellDescriptor.plist */; };
+		44515D361E0B6FCF002B3053 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44515D351E0B6FCF002B3053 /* CustomCell.swift */; };
 		447568221E09163F00768715 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447568201E09163F00768715 /* ImageViewController.swift */; };
 		447568231E09163F00768715 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447568211E09163F00768715 /* ImageViewController.xib */; };
 		447568271E09293D00768715 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447568251E09293D00768715 /* TableViewController.swift */; };
@@ -52,6 +61,15 @@
 /* Begin PBXFileReference section */
 		44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdvancedTableViewController.swift; path = "Advanced TableView/AdvancedTableViewController.swift"; sourceTree = "<group>"; };
 		44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvancedTableViewController.xib; path = "Advanced TableView/AdvancedTableViewController.xib"; sourceTree = "<group>"; };
+		44515D141E0B6652002B3053 /* CustomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomNameCell.xib; path = "Advanced TableView/CustomCell/CustomNameCell.xib"; sourceTree = "<group>"; };
+		44515D181E0B666C002B3053 /* CustomBirthdayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomBirthdayCell.xib; path = "Advanced TableView/CustomCell/CustomBirthdayCell.xib"; sourceTree = "<group>"; };
+		44515D1C1E0B6686002B3053 /* CustomMaritalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomMaritalCell.xib; path = "Advanced TableView/CustomCell/CustomMaritalCell.xib"; sourceTree = "<group>"; };
+		44515D241E0B66CF002B3053 /* CustomFavoriteSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomFavoriteSportCell.xib; path = "Advanced TableView/CustomCell/CustomFavoriteSportCell.xib"; sourceTree = "<group>"; };
+		44515D281E0B66E3002B3053 /* CustomFavoriteColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomFavoriteColorCell.xib; path = "Advanced TableView/CustomCell/CustomFavoriteColorCell.xib"; sourceTree = "<group>"; };
+		44515D2C1E0B672C002B3053 /* CustomLevelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomLevelCell.xib; path = "Advanced TableView/CustomCell/CustomLevelCell.xib"; sourceTree = "<group>"; };
+		44515D301E0B68EA002B3053 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NormalCell.xib; path = "Advanced TableView/CustomCell/NormalCell.xib"; sourceTree = "<group>"; };
+		44515D331E0B6B92002B3053 /* CellDescriptor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellDescriptor.plist; sourceTree = "<group>"; };
+		44515D351E0B6FCF002B3053 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = "Advanced TableView/CustomCell/CustomCell.swift"; sourceTree = "<group>"; };
 		447568201E09163F00768715 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "Image View/ImageViewController.swift"; sourceTree = "<group>"; };
 		447568211E09163F00768715 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageViewController.xib; path = "Image View/ImageViewController.xib"; sourceTree = "<group>"; };
 		447568251E09293D00768715 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = TableView/TableViewController.swift; sourceTree = "<group>"; };
@@ -109,10 +127,26 @@
 		44515D041E0B5FE2002B3053 /* Advanced TableView */ = {
 			isa = PBXGroup;
 			children = (
+				44515D0A1E0B6410002B3053 /* CustomCell */,
 				44515D051E0B6015002B3053 /* AdvancedTableViewController.swift */,
 				44515D061E0B6015002B3053 /* AdvancedTableViewController.xib */,
 			);
 			name = "Advanced TableView";
+			sourceTree = "<group>";
+		};
+		44515D0A1E0B6410002B3053 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				44515D141E0B6652002B3053 /* CustomNameCell.xib */,
+				44515D181E0B666C002B3053 /* CustomBirthdayCell.xib */,
+				44515D1C1E0B6686002B3053 /* CustomMaritalCell.xib */,
+				44515D241E0B66CF002B3053 /* CustomFavoriteSportCell.xib */,
+				44515D281E0B66E3002B3053 /* CustomFavoriteColorCell.xib */,
+				44515D2C1E0B672C002B3053 /* CustomLevelCell.xib */,
+				44515D301E0B68EA002B3053 /* NormalCell.xib */,
+				44515D351E0B6FCF002B3053 /* CustomCell.swift */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 		4475681F1E09162100768715 /* Image View */ = {
@@ -168,6 +202,7 @@
 				448AC13F1E08EAD5006544FF /* Main.storyboard */,
 				448AC1421E08EAD5006544FF /* Assets.xcassets */,
 				448AC1441E08EAD5006544FF /* LaunchScreen.storyboard */,
+				44515D331E0B6B92002B3053 /* CellDescriptor.plist */,
 				448AC1471E08EAD5006544FF /* Info.plist */,
 			);
 			path = iOSLearning;
@@ -349,15 +384,23 @@
 			files = (
 				44F09DC21E0A1FFF00993996 /* CollectionViewController.xib in Resources */,
 				447568231E09163F00768715 /* ImageViewController.xib in Resources */,
+				44515D261E0B66CF002B3053 /* CustomFavoriteSportCell.xib in Resources */,
+				44515D2E1E0B672C002B3053 /* CustomLevelCell.xib in Resources */,
+				44515D321E0B68EA002B3053 /* NormalCell.xib in Resources */,
+				44515D341E0B6B92002B3053 /* CellDescriptor.plist in Resources */,
 				448AC1461E08EAD5006544FF /* LaunchScreen.storyboard in Resources */,
 				44515D081E0B6015002B3053 /* AdvancedTableViewController.xib in Resources */,
 				44F09DD21E0A72C700993996 /* WebViewController.xib in Resources */,
+				44515D2A1E0B66E3002B3053 /* CustomFavoriteColorCell.xib in Resources */,
 				448AC16D1E08EB81006544FF /* ListItemViewController.xib in Resources */,
 				44F09DC71E0A21A400993996 /* CellTextField.xib in Resources */,
+				44515D1E1E0B6686002B3053 /* CustomMaritalCell.xib in Resources */,
+				44515D1A1E0B666C002B3053 /* CustomBirthdayCell.xib in Resources */,
 				447568281E09293D00768715 /* TableViewController.xib in Resources */,
 				448AC1431E08EAD5006544FF /* Assets.xcassets in Resources */,
 				448AC1411E08EAD5006544FF /* Main.storyboard in Resources */,
 				44F09DBD1E0A0F5E00993996 /* SearchBarDemo.xib in Resources */,
+				44515D161E0B6652002B3053 /* CustomNameCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +427,7 @@
 			files = (
 				448AC13E1E08EAD5006544FF /* ViewController.swift in Sources */,
 				44515D071E0B6015002B3053 /* AdvancedTableViewController.swift in Sources */,
+				44515D361E0B6FCF002B3053 /* CustomCell.swift in Sources */,
 				44F09DD11E0A72C700993996 /* WebViewController.swift in Sources */,
 				448AC16C1E08EB81006544FF /* ListItemViewController.swift in Sources */,
 				447568221E09163F00768715 /* ImageViewController.swift in Sources */,
